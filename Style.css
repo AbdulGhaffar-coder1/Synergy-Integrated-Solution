@@ -1048,12 +1048,22 @@
     }
     .project-img{
         overflow: hidden;
+        height: 250px;
     }
+    .project-heading{
+        font-size: 38px;
+    }
+    .project-para{
+        font-size: 17px;
+        width: 100%;
+    }
+   
 }
 
 @media (max-width:376px){
+    
     .card{
-        max-width: 300px;
+        max-width: 350px;
     }
     .hero-heading{
         font-size: 28px;
