@@ -97,6 +97,7 @@
             width: 40%;
             margin-left: 8%;
             left: 20;
+            gap: 1.5rem;
         }
         .nav-btns{
             align-self: center;
@@ -783,6 +784,215 @@
     margin-left: 15px;
 }
 
+/* Services CSS starts from here */
+
+.services{
+    background-color: #070E19;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.services-heading{
+    color: white;
+    font-size: 45px;
+    width: 70%;
+    margin-left: 15%;
+}
+.service-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.service-card{
+    width: 30%;
+    background-color: #0B1323;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: all ease-in 1s;
+}
+.service-upper{
+    display: flex;
+    justify-content: space-between;
+}
+.number{
+    color: rgb(112, 110, 110);
+    font-size: 20px;
+    padding: 10px;
+}
+.service-icon{
+    background-color: #0E1C34;
+    color: #02BCE5;
+    font-size: 22px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: all ease-in 1s;
+}
+.service-title{
+    color: white;
+    padding: 10px;
+}
+.service-des{
+    color: rgb(173, 173, 173);
+    padding: 10px;
+}
+.line{
+    border-top: 1px solid rgb(81, 80, 80);
+    width: 96%;
+    margin-left: 2%;
+}
+.service-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.bottom-span{
+    padding: 10px;
+    color: rgb(110, 110, 110);
+}
+.bottom-icon{
+    padding: 10px;
+    color: white;
+    transition: all ease-in 1s;
+}
+.service-card:hover{
+    border-color: #02BCE5;
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(2, 188, 229, 0.4); 
+
+
+}
+.service-card:hover .number{
+    color: #02BCE5;
+}
+.service-card:hover .bottom-icon{
+    color: #02BCE5;
+    transform: translate(10px);
+}
+.service-card:hover .service-icon{
+    border-color: #02BCE5;
+    transform: scale(1.02);
+
+
+}
+
+
+
+.packages{
+    background-color: #0A172D;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.package-cards{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+.packages-top{
+    width: 24%;
+    margin-left: 37%;
+}
+.packages-heading{
+    color: white;
+    width: 80%;
+    margin-left: 10%;
+   
+}
+.packages-span{
+    color: white;
+}
+.package-card{
+    width: 30%;
+    background-color: #0B1223;
+    padding: 30px;
+    color: white;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    transition: all ease-in 1s;
+}
+.package-icon{
+    font-size: 25px;
+    background-color: #070D18;
+   width: 70px;
+   padding: 7px;
+   margin-top: 20px;
+
+    color: #02BCE5;
+    border-radius: 7px;
+}
+.package-heading{
+     margin-top: 20px;
+}
+.plans li{
+    list-style: none;
+    padding: 5px;
+    margin-left: -40px;
+}
+.plans li span{
+    color: #02BCE5;
+    padding-right: 15px;
+}
+.package-para{
+    color: rgb(164, 163, 163);
+}
+.plan-para{
+    color: rgb(140, 139, 139);
+}
+.package-btn{
+    width: 90%;
+    height: 50px;
+    background-color: #070D18;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    margin-left: 2%;
+    transition: all ease-in 1s;
+}
+.package-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.pkg-btn-icon{
+    color: #02BCE5;
+    margin-top: 6px;
+      transform: translate(0);
+    transition: all ease-in 1s;
+  
+}
+.package-btn:hover .pkg-btn-icon{
+    transform: translate(10px);
+}
+.package-btn:hover{
+    border-color: #02BCE5;
+}
+.package-card:hover{
+    transform: scale(1.02);
+    border-color: #02BCE5;
+}
+.populor{
+    border: 2px solid #02BCE5;
+}
+.populor-btn{
+background: linear-gradient(90deg, #02BCE5 100%, white 0%);}
+.populor-btn-icon{
+    color: white;
+}
+.populor-tag{
+    width: 32%;
+    margin-left: 34%;
+    background-color: #02BCE5;
+    color: black;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+    margin-top: -47px;
+    font-weight: bold;
+}
+
+
 @media (max-width:768px){
     .nav-btns{
         display: none;
@@ -892,7 +1102,31 @@
             margin-left: 6%;
             margin-top: -15px;
         }
-       
+        .services-heading{
+            width: 80%;
+            margin-left: 10%;
+        }
+       .service-card{
+        width: 40%;
+       }
+       .services{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        
+       }
+       .packages-top{
+        width: 40%;
+        margin-left: 30%;
+       }
+       .package-cards{
+        flex-wrap: wrap;
+        gap: 30px;
+
+       }
+       .package-card{
+        width: 40%;
+        
+       }
     
 }
 
@@ -909,16 +1143,20 @@
         display: none !important ;
     }
        .navbar-nav.active {
+        font-size: 10px;
         display: flex !important;
         position: absolute;
         top: 80px;
         left: 0;
         width: 100%;
         flex-direction: column;
-        gap: 0;
+       
         background-color: #0A1325;
         z-index: 999;
         animation: animate ease 2s;
+        gap: 11px;
+        margin-left: 0px;
+        justify-content: center;
     }
     @keyframes animate {
         0%{
@@ -1056,6 +1294,26 @@
     .project-para{
         font-size: 17px;
         width: 100%;
+    }
+    .service-card{
+        width: 80%;
+    }
+    .services-heading{
+        font-size: 38px;
+        width: 94%;
+        margin-left: 3%;
+    }
+    .package-card{
+        width: 80%;
+    }
+    .packages-top{
+        width: 70%;
+        margin-left: 15%;
+    }
+    .packages-heading{
+        width: 90%;
+        margin-left: 5%;
+        font-size: 35px;
     }
    
 }
