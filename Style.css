@@ -991,7 +991,75 @@ background: linear-gradient(90deg, #02BCE5 100%, white 0%);}
     margin-top: -47px;
     font-weight: bold;
 }
-
+.testominals-main{
+    background-color: #09162C;
+    padding-top: 50px;
+}
+.testominals{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+}
+.testominal{
+    width: 30%;
+    padding: 30px;
+    background-color: #07121E;
+    border-radius: 15px;
+    padding-bottom: 15px;
+    transition: all ease 1s;
+    border: 2px solid transparent;
+}
+.tes-upper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.icons  {
+    color: #02BCE5;
+}
+.testominal-des{
+    color: white;
+    font-size: 19px;
+    margin-top: 30px;
+}
+.tes-lower{
+    display: flex;
+    margin-top: 30px;
+}
+.name{
+    line-height: 0.1;
+    margin-left: 10px;
+    color: white;
+    font-size: 14px;
+    
+}
+.short{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color:#02BCE5;
+    border: 1px solid #02BCE5;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    align-items: center;
+    background-color: #0F1D38;
+    transition: all ease 1s;
+}
+.tes-owner{
+    color: rgb(179, 178, 178);
+}
+.testominal:hover .short{
+    border: 2px solid #02BCE5;
+    transform: scale(1.01);
+}
+.testominal:hover .qoma{
+color: #02BCE5;
+}
+.testominal:hover{
+    border: 2px solid #02BCE5;
+    cursor: pointer;
+}
 
 @media (max-width:768px){
     .nav-btns{
@@ -1127,6 +1195,14 @@ background: linear-gradient(90deg, #02BCE5 100%, white 0%);}
         width: 40%;
         
        }
+       .testominals{
+        flex-wrap: wrap;
+        gap: 20px;
+       }
+       .testominal{
+        width: 40%;
+       }
+
     
 }
 
@@ -1314,6 +1390,9 @@ background: linear-gradient(90deg, #02BCE5 100%, white 0%);}
         width: 90%;
         margin-left: 5%;
         font-size: 35px;
+    }
+    .testominal{
+        width: 80%;
     }
    
 }
