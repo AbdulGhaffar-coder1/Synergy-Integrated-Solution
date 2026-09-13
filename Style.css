@@ -1123,10 +1123,54 @@ color: #02BCE5;
 }
 .cta{
     background-color: #0F243E;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 .cta-top{
     width: 15%;
     margin-left: 40%;
+}
+
+
+.cta-first,.cta-second{
+    width: 200px;
+    height: 60px;
+    border: 2px solid transparent;
+    background-color: #02BCE5;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 10px;
+    
+    transition: all ease-in 1s;
+}
+.cta-btn-icon {
+    color: white;
+    margin-left: 5px;
+    transition: all ease-in 1s;
+    
+}
+.cta-first:hover .cta-btn-icon {
+margin-left: 20px;
+}
+
+.cta-second{
+    background-color: #0B1427;
+    color: white;
+}
+.cta-second:hover{
+    background-color:#1c2229 ;
+}
+
+.cta-btns{
+    width: 50%;
+    margin-left: 33%;
+    gap: 25px;
+    display: flex;
+}
+.cta-heading{
+    width: 60%;
+    margin-left: 20%;
 }
 @media (max-width:768px){
     .nav-btns{
@@ -1272,9 +1316,17 @@ color: #02BCE5;
        .FAQ-btn-h{
         font-size: 18px;
        }
+       .cta-btns{
+        margin-left: 24%;
+       }
+       .cta-heading{
+        width: 80%;
+        margin-left: 10%;
+       }
 
     
 }
+
 
 
 @media (max-width:426px){
@@ -1487,6 +1539,14 @@ color: #02BCE5;
    .FAQ-number{
     font-size: 20px;
     margin-left: -30px;
+   }
+   .cta-btns{
+    width: 90%;
+    margin-left: 5%;
+   }
+   .cta-top{
+    width: 50% !important;
+    margin-left: 25% !important;
    }
 }
 
